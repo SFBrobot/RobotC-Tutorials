@@ -27,10 +27,28 @@ for(int i = 0; i < 5; i++) {
 
 for(i = 0; i < 5; i++) {
   foo[i] = val;
-} //all members have the same value in this, but you can use an operator to fix that
+} all members have the same value in this, but you can use an operator to fix that
 for(i = 0; i < 5; i++) {
   foo[i] = val * i;
-}  //Now the value of a given member of array foo is the value of (i * val), which changes for each member
+}  Now the value of a given member of array foo is the value of (i * val), which changes for each member
+
+do {
+  Do something
+} while(Something is true)
+This will do something once, then check whether something is true.
+
+switch(var) {
+  case val1: The case label is followed by a colon
+    Do a thing
+    break; The case block is ended by break;
+  case val2:
+    Do another thing
+    break;
+  default: This is a catch-all, like an else statement
+    Yell at user, since they did something you didn't want them to
+    break;
+}
+
 */
 
 //This will compile, it's an example of a for loop and an if-else if-else block
@@ -56,6 +74,28 @@ task main() {
     
     else {
       printf("25 > x > 5");
+    }
+  }
+  for(int i = 0; i < 10; i++) {
+    switch(i) {
+      case 0:
+        int num = 0;
+        break;
+      case 1:
+        num = 25;
+        break;
+      case 2:
+        num = 156;
+        break;
+      case 3:
+        num = 23057;
+        break;
+      case 4:
+        num = 8925;
+        break;
+      default: //When i is greater than 4, it won't get caught by any of the above cases, but this is a catch-all
+        num = 789;
+        break;
     }
   }
 }

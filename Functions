@@ -1,0 +1,42 @@
+
+/* Types
+anything a variable can be
+  must be followed by return <VALUE>;
+  the value must be of the type at the beginning
+also void
+  void returns nothing
+*/
+
+/*
+Arguments!!!
+-------------
+These are values you pass into the function
+They are used to make a function more versatile
+*/
+
+void myFunct() {
+  printf("Done!\n");
+}
+
+float add() {
+  float a = 10;
+  float b = 25;
+  return a + b;
+}
+
+float divide(float dividend, float divisor) {
+  return dividend / divisor;
+}
+
+task main() {
+  float sum,
+    thing1,
+    thing2,
+    quotient;
+  myFunct();
+  sum = add();
+  quotient = divide(thing1, thing2);
+  printf("Sum: %f\n", sum);
+  printf("Quotient: %f\n", quotient);
+  wait1Msec(5000);
+}

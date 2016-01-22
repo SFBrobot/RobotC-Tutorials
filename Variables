@@ -20,6 +20,19 @@ when assigning a value to a char, put the character into 'apostrophes'
 word-basically a bool, but used with the joystick buttons
 
 There are other RobotC-specific variable types, but they aren't all that useful
+
+array-a series of variables with the same name (they can be any type)
+They are declared by putting brackets [ ] after a variable name, with a number inside
+The number is how many variables you want to declare
+int array[5];
+This declares 5 int variables, named array
+They are accessed by using the name, followed by brackets [ ] with a number inside
+The number is 1 less than whatever member you want to access
+array[0] is the first member of the array,
+array[1] is the second,
+etc.
+
+They are the primary use of for loops, and are extremely useful in more advanced programming
 */
 
 //declaring a variable
